@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EBAC: React - Módulo 1</title>
+</head>
+<body onload="sayHello()">
+  <h1></h1>
+  <p id="hello"></p>
+  <h3 id="say"></h3>
+  <h2 id="append"></h2>
+  <input id="input" type="text" />
+
+  <script>
+    // 1. Utilizando 'document.write'
+    document.write('Hello World')
+
+    // 2. Utilizando textContent
+    document.querySelector('h1').textContent = "Hello World"
+
+    // 3. Inserindo o texto em um ID específico
+    document.getElementById('hello').innerHTML = "Hello World"
+
+    // 4. Utilzando appendChild
+    let helloText = document.createTextNode('Hello World')
+    document.getElementById('append').appendChild(helloText)
+
+    // 5. Atribuindo valor ao atributo 'value' de um elemento 'input'
+    document.querySelector('#input').value = "Hello World"
+
+    // 6. Utilizando console.log
+    console.log('Hello World')
+
+    // 7. Utilizando alert
+    alert('Hello World')
+
+    // 8. Criando uma função que dispara o Hello World quando a página carrega
+    function sayHello() {
+      document.querySelector('#say').innerHTML = "Hello World"
+    }
+
+    // 9. Utilizando prompt
+    prompt('Hello World')
+
+    // 10. 
+  </script>
+</body>
+</html>
