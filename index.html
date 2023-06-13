@@ -11,6 +11,9 @@
   <h3 id="say"></h3>
   <h2 id="append"></h2>
   <input id="input" type="text" />
+  
+  <p id="demo"></p>
+  <button onclick="triggerHello()">Clique</button>
 
   <script>
     // 1. Utilizando 'document.write'
@@ -43,7 +46,10 @@
     // 9. Utilizando prompt
     prompt('Hello World')
 
-    // 10. 
+    // 10. A partir de um botão
+    function triggerHello() {
+      document.getElementById('demo').innerHTML = "Hello World"
+    }
   </script>
 </body>
 </html>
